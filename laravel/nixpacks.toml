@@ -27,7 +27,7 @@ cmd = '/assets/start.sh'
 cp /app/.env.example /app/.env
 
 # Generate the application key
-php /app/artisan key:generate
+#php /app/artisan key:generate
 
 # Transform the nginx configuration
 node /assets/scripts/prestart.mjs /assets/nginx.template.conf /etc/nginx.conf
