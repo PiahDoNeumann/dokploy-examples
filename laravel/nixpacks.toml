@@ -183,7 +183,7 @@ http {
             include $!{nginx}/conf/fastcgi_params;
             include $!{nginx}/conf/fastcgi.conf;
 
-            fastcgi_param PHP_VALUE "upload_max_filesize=512M \n post_max_size=512M \n max_execution_time=3600";
+            fastcgi_param PHP_VALUE "upload_max_filesize=512M \n post_max_size=512M";
         }
      
         location ~ /\.(?!well-known).* {
