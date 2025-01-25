@@ -111,7 +111,6 @@ pm.max_children = 50
 pm.min_spare_servers = 4
 pm.max_spare_servers = 32
 pm.start_servers = 18
-date.timezone=America/Sao_Paulo
 clear_env = no
 '''
 
@@ -184,7 +183,7 @@ http {
             include $!{nginx}/conf/fastcgi_params;
             include $!{nginx}/conf/fastcgi.conf;
 
-            fastcgi_param PHP_VALUE "upload_max_filesize=30M \n post_max_size=35M";
+            fastcgi_param PHP_VALUE "upload_max_filesize=512M \n post_max_size=512M";
         }
      
         location ~ /\.(?!well-known).* {
