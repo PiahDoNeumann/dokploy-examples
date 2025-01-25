@@ -21,6 +21,8 @@ import AppFooter from './components/AppFooter.vue'
   </main>
 
   <app-header />
+  <Parceiros />
+  <app-footer />
 
 </template>
 
