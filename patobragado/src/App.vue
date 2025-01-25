@@ -5,17 +5,6 @@ import TheWelcome from './components/TheWelcome.vue'
 import Parceiros from './components/Parceiros.vue'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Parceiros,
-    AppHeader,
-    AppFooter,
-    HelloWorld,
-    TheWelcome
-  }
-}
 </script>
 
 <template>
