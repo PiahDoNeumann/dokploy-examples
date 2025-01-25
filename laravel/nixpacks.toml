@@ -101,6 +101,7 @@ stderr_logfile=/var/log/worker-laravel.log
 
 "php-fpm.conf" = '''
 [www]
+date.timezone=America/Sao_Paulo
 listen = 127.0.0.1:9000
 user = www-data
 group = www-data
@@ -111,6 +112,10 @@ pm.max_children = 50
 pm.min_spare_servers = 4
 pm.max_spare_servers = 32
 pm.start_servers = 18
+upload_max_filesize= 1G
+post_max_size= 1G
+memory_limit = 1G
+max_execution_time=360
 clear_env = no
 '''
 
