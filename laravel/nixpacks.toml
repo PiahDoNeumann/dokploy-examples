@@ -111,6 +111,7 @@ pm.max_children = 50
 pm.min_spare_servers = 4
 pm.max_spare_servers = 32
 pm.start_servers = 18
+max_execution_time=3600
 clear_env = no
 '''
 
